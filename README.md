@@ -15,6 +15,7 @@
 - [ ] Add CPU, disk and connection benchmarking
 - [ ] Added IPv6 DNS benchmarking
 - [ ] Use a bash framework
+  - [ ] Catch errors thrown by network failure
 - [ ] Manipulate results better. e.g: sort
   - [ ] Accept --json parameter to show machine values
 - [ ] Save results locally
@@ -22,8 +23,9 @@
   - [ ] on public server
   - [ ] on private server
   - [ ] add privacy terms
-- Create fast install command
-- Add bensh to [xpm](https://github.com/insign/xpm)
+- [ ] Create fast install command
+- [ ] Test DNS ordered by random
+- [ ] Add bensh to [xpm](https://github.com/insign/xpm)
 
 ## License
 [GNU Affero General Public License v3.0](LICENSE.md)
