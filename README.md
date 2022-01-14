@@ -5,10 +5,25 @@
 > This is a preview, I'll add others kinds of benchmark soon
 
 ## Usage
+> Test using the most popular DNS servers (see [ipv4.csv](ipv4.csv))
 ```shell
 ./bench
 ./bench youtube.com
 ```    
+
+## TO-DO
+- [ ] Add CPU, disk and connection benchmarking
+- [ ] Added IPv6 DNS benchmarking
+- [ ] Use a bash framework
+- [ ] Manipulate results better. e.g: sort
+  - [ ] Accept --json parameter to show machine values
+- [ ] Save results locally
+- [ ] Save results online
+  - [ ] on public server
+  - [ ] on private server
+  - [ ] add privacy terms
+- Create fast install command
+- Add bensh to [xpm](https://github.com/insign/xpm)
 
 ## License
 [GNU Affero General Public License v3.0](LICENSE.md)
