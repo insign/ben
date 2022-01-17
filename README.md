@@ -1,4 +1,4 @@
-# bensh
+# ben
 
 ### Simple <ins>ben</ins>chmarking using shell
 
