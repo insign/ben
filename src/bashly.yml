@@ -1,0 +1,40 @@
+name: ben
+help: Simple benchmarking using shell
+version: 0.1.0
+
+environment_variables:
+- name: api_key
+  help: Set your API key
+
+commands:
+- name: all
+  help: Run all available benchmarking tests
+
+- name: dns
+  short: d
+  help: Do a DNS benchmark
+
+  args:
+  - name: host
+    required: false
+    default: wikipedia.org
+    help: test against a specific host
+
+  flags:
+  - long: --popular
+    help: Test only with most popular DNS servers
+  - long: --json
+    help: Returns a json instead human-readable text
+  - long: --lowest
+    help: Returns only the lowest measured result
+  - long: --rounds
+    default: "3"
+    help: How many times repeat the test before choose a winner
+  - long: --sleep
+    help: How many secods to wait beetween rounds
+    default: 1s
+
+  examples:
+  - ben dns
+  - ben dns msn.com
+  - ben d example.com

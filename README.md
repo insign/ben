@@ -1,6 +1,6 @@
 # bensh
 
-### Simple <ins>ben</ins>chmarking using <ins>sh</ins>ell
+### Simple <ins>ben</ins>chmarking using shell
 
 > This is a preview, I'll add others kinds of benchmark soon
 
@@ -26,6 +26,7 @@
 - [ ] Create fast install command
 - [ ] Test DNS ordered by random
 - [ ] Add bensh to [xpm](https://github.com/insign/xpm)
+- [ ] Add auto-update
 
 ## License
 [GNU Affero General Public License v3.0](LICENSE.md)
