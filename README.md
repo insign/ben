@@ -4,6 +4,17 @@
 
 > This is a preview, I'll add others kinds of benchmark soon
 
+## Install
+1. Clone the repo or [download the zip](https://github.com/insign/ben/archive/refs/heads/main.zip):
+```shell
+git clone https://github.com/insign/ben.git && cd ben
+```
+2. Mark it as executable
+```shell
+chmod +x ./ben
+```
+> [Soon](#to-do) I'll make it available to run without install
+
 ## Usage
 > Test using the most popular DNS servers (see [ipv4.csv](ipv4.csv))
 ```shell
@@ -30,11 +41,16 @@
 - [ ] Add auto-update
 - [ ] Create a container image to run without install
 - [ ] Command to run using curl instead install
+- [ ] Unit tests
 
 ## License
 [GNU Affero General Public License v3.0](LICENSE.md)
 
 ## Contribute
 > For now, you can just make a PR.
+
+## Thanks
+
+[bashly](https://github.com/DannyBen/bashly) - bash CLI generator
 
 Inspired by [delfer](https://github.com/delfer)'s [gist](https://gist.github.com/delfer/34f0d85d1f4474e6d9fd4c47f749bcb8)
