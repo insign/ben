@@ -7,13 +7,14 @@
 ## Usage
 > Test using the most popular DNS servers (see [ipv4.csv](ipv4.csv))
 ```shell
-./bench
-./bench youtube.com
+./ben dns
+./ben dns youtube.com
+./ben d wikipedia.org
 ```    
 
 ## TO-DO
 - [ ] Add CPU, disk and connection benchmarking
-- [ ] Added IPv6 DNS benchmarking
+- [ ] Add IPv6 DNS benchmarking
 - [ ] Use a bash framework
   - [ ] Catch errors thrown by network failure
 - [ ] Manipulate results better. e.g: sort
@@ -25,8 +26,10 @@
   - [ ] add privacy terms
 - [ ] Create fast install command
 - [ ] Test DNS ordered by random
-- [ ] Add bensh to [xpm](https://github.com/insign/xpm)
+- [ ] Add ben to [xpm](https://github.com/insign/xpm)
 - [ ] Add auto-update
+- [ ] Create a container image to run without install
+- [ ] Command to run using curl instead install
 
 ## License
 [GNU Affero General Public License v3.0](LICENSE.md)
