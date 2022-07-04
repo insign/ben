@@ -70,7 +70,9 @@ chmod +x ./ben
     - [ ] on private server
     - [ ] add privacy terms
 - [ ] Create fast install command
-- [ ] DNS: implement "popular" flags to limit number of popular servers
+- [ ] DNS
+  - [ ] implement "popular" flags to limit number of popular servers
+  - [ ] flag to add custom DNS without editing proper file
 - [ ] Test DNS ordered by random
 - [ ] Add ben to [xpm](https://github.com/insign/xpm)
 - [ ] Add auto-update
