@@ -4,7 +4,6 @@
 
 > Take a look at [YABS](https://github.com/masonr/yet-another-bench-script) too, which we use a lot of code.
 
-> This is a preview, I'll add others kinds of benchmark soon
 
 ## Install
 
