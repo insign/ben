@@ -1,17 +1,31 @@
 name: ben
 help: Simple benchmarking using shell
-version: 0.1.0
+version: 0.2.0
 
 environment_variables:
 - name: api_key
   help: Set your API key
 
 commands:
+- name: completions
+  help: |-
+    Generate bash completions
+    Usage: eval "\$(./ben completions)"
 - name: all
   help: Run all available benchmarking tests
 
+- name: cpu
+  alias: system
+  help: Do a CPU/System benchmark
+
+- name: conn
+  alias: connection
+  help: Do a speed connection test
+
+- name: disk
+  help: Do a disk benchmark
+
 - name: dns
-  short: d
   help: Do a DNS benchmark
 
   args:
@@ -22,19 +36,29 @@ commands:
 
   flags:
   - long: --popular
-    help: Test only with most popular DNS servers
+    arg: count
+    default: "10"
+    validate: integer
+    help: Test only with N most popular DNS servers
+
   - long: --json
     help: Returns a json instead human-readable text
+
   - long: --lowest
     help: Returns only the lowest measured result
+
   - long: --rounds
+    arg: count
     default: "3"
+    validate: integer
     help: How many times repeat the test before choose a winner
+
   - long: --sleep
-    help: How many secods to wait beetween rounds
-    default: 1s
+    arg: time
+    help: How many secods to wait between rounds
+    default: "1s"
 
   examples:
   - ben dns
   - ben dns msn.com
-  - ben d example.com
+  - ben dns example.com
